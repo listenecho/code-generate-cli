@@ -3,6 +3,23 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:listenecho/code-generate-cli.git",
-  "author": "fanwebo <listenecho@foxmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "bin": {
+    "fish-cli": "bin/cli.js"
+  },
+  "scripts": {
+    "build": "tsc --build --watch"
+  },
+  "dependencies": {
+    "@types/node": "^15.6.0",
+    "commander": "^7.2.0",
+    "ejs": "^3.1.6",
+    "inquirer": "^8.1.0",
+    "module-alias": "^2.2.2",
+    "typescript": "^4.2.4"
+  },
+  "_moduleAliases": {
+    "@root"      : ".", 
+    "@components" : "src/components"
+  }
 }
